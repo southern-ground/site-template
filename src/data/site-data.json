@@ -1,0 +1,27 @@
+{
+  "site": {
+    "title": "",
+    "description": "",
+    "author": "",
+    "authorId": "https://plus.google.com/u/0/103429485426405859499/",
+    "canonicalUrl": "http://example.com",
+    "cdn": {
+      "prod": "",
+      "stage": ""
+    },
+    "tracking": {
+      "google": {
+        "googleUA": "UA-XXXXXXXX-XX"
+      }
+    }
+  },
+  "sections": {},
+  "social": {
+    "socialMediaImage": "/tbd.png",
+    "platformUrls": {
+      "facebook": "https://facebook.com",
+      "instagram": "https://instagram.com",
+      "twitter": "https://twitter.com"
+    }
+  }
+}

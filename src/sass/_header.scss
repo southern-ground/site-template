@@ -1,0 +1,13 @@
+// Header-level CSS:
+@import "_shared";
+
+html {
+  body {
+    header {
+      @include media-desktop {
+        // Assign these properties to desktop and up:
+        max-width: $desktop;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+// Body-level CSS:
+@import "_shared";
+
+html {
+  body {
+    &.no-scroll {
+      overflow: hidden;
+    }
+    &.below-the-fold {
+      // Whatever needs to change under the fold.
+    }
+    #Content {
+      // Default Content container:
+      width: 100%;
+      margin: 0 auto;
+      @include media-desktop {
+        // Assign these properties to desktop and up:
+        max-width: $desktop;
+      }
+    }
+    div#overlay {
+      // Default styles for the built-in modal:
+      background-color: black;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      z-index: 100;
+      #overlayContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+      a.overlay__close {
+        text-indent: -10000px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: url(../img/close-x.svg);
+      }
+    }
+  }
+}

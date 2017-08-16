@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>{{site.title}}</title>
+
+    <meta name="description" content="{{site.description}}">
+    <meta name="robots" content="all">
+    <meta name="author"
+          content="{{site.author}}">
+    <meta name="copyright" content="Copyright (c) {{getCurrentYear()}} {{site.title}}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1">
+
+    <!-- Icons -->
+    <!-- http://www.favicomatic.com/ -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+    <!-- for Facebook -->
+    <meta property="og:title" content="{{site.title}}"/>
+    <meta property="og:type" content="profile"/>
+    <meta property="og:image" content="{{site.canonicalUrl}}{{social.socialMediaImage}}"/>
+    <meta property="og:url" content="{{site.canonicalUrl}}"/>
+    <meta property="og:description"
+          content="{{site.description}}"/>
+
+    <!-- for Twitter -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="{{site.title}}"/>
+    <meta name="twitter:description"
+          content="{{site.description}}"/>
+    <meta name="twitter:image" content="{{site.canonicalUrl}}{{social.socialMediaImage}}"/>
+
+    <!-- for Google -->
+    <link rel='author' href='{{site.authorId}}'/>
+
+    <link rel="stylesheet" href="{{localizedCdn()}}/css/vendor/normalize.css">
+    <link rel="stylesheet" href="{{localizedCdn()}}/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="{{localizedCdn()}}/css/main.css?id={{guid()}}">
+
+    <script src="{{localizedCdn()}}/js/vendor/modernizr-custom.js"></script>
+
+    <!--
+
+    ### Revision Info ###
+    Wrap the below in double curlies to re-enable
+gitRev()
+
+    ### CDN Utilization ###
+    {{localizedCdn()}}
+
+    -->
+
+</head>
+<body>
+
+<!--[if lt IE 8]>
+<p class="browserupgrade">This website was build with modern browsers in mind. Please consider <a
+        href="http://browsehappy.com/">upgrading
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<!-- FB SDK
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: 'xxx5596',
+            xfbml: true,
+            version: 'v2.5'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- END FB SDK -->
+
+<header>
+    <!-- Site Header -->
+</header>
+<div id="Content">
+    <!-- Site Content -->
+    <section></section>
+</div>
+<footer>
+    <!-- Site Footer -->
+</footer>
+
+<div id="overlay" style="display:none;">
+    <a id="overlayClose" href="#" class="overlay__close">Close</a>
+    <div id="overlayContent"></div>
+</div>
+
+<script src="{{localizedCdn()}}/js/vendor/underscore-min.js"></script>
+<script src="{{localizedCdn()}}/js/vendor/jquery.min.js"></script>
+<script src="{{localizedCdn()}}/js/vendor/lazyload.transpiled.min.js"></script>
+<script src="{{localizedCdn()}}/js/main.js?id={{guid()}}"></script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', '{{site.tracking.google.googleUA}}', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

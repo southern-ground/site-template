@@ -1,0 +1,15 @@
+// Footer-level CSS:
+@import "_shared";
+
+html {
+  body {
+    width: 100%;
+    margin: 0 auto;
+    footer {
+      @include media-desktop {
+        // Assign these properties to desktop and up:
+        max-width: $desktop;
+      }
+    }
+  }
+}
